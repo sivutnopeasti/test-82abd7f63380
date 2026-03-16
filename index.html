@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LVI-palvelut Pirkanmaalla | test</title>
+  <meta name="description" content="Kaikki LVI-palvelut Pirkanmaalla yli 10 vuoden kokemuksella. Putkityöt, lämmitysjärjestelmät, ilmanvaihto ja lämpöpumput nopeasti ja siististi. Pyydä tarjous!">
+  <!-- Open Graph -->
+  <meta property="og:title" content="LVI-palvelut Pirkanmaalla | test">
+  <meta property="og:description" content="Kaikki LVI-palvelut Pirkanmaalla: putkityöt, lämmitysjärjestelmät, ilmanvaihto ja lämpöpumput.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fi_FI">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "test",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Aleksanterinkatu 20",
+      "addressRegion": "Pirkanmaa",
+      "addressCountry": "FI"
+    },
+    "telephone": "04578736248",
+    "email": "kappe.gm@gmail.com",
+    "areaServed": "Pirkanmaa"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Floating background shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <svg class="bg-shape shape-1" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="100" fill="#E8650A"/>
+    </svg>
+    <svg class="bg-shape shape-2" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="100,0 200,200 0,200" fill="#E8650A"/>
+    </svg>
+    <svg class="bg-shape shape-3" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="100" cy="100" r="100" fill="#E8650A"/>
+    </svg>
+    <svg class="bg-shape shape-4" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <polygon points="100,0 200,200 0,200" fill="#E8650A"/>
+    </svg>
+  </div>
+
+  <!-- NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <nav class="nav-container" aria-label="Päänavigaatio">
+      <a href="index.html" class="nav-logo" aria-label="test – etusivulle">test</a>
+      <button class="hamburger" id="hamburger" aria-label="Avaa valikko" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#palvelut">Palvelut</a></li>
+        <li><a href="#prosessi">Työn eteneminen</a></li>
+        <li><a href="#tietoa">Tietoa meistä</a></li>
+        <li><a href="#yhteystiedot" class="nav-cta">Pyydä tarjous</a></li>
+      </ul>
+    </nav>
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul>
+        <li><a href="#palvelut">Palvelut</a></li>
+        <li><a href="#prosessi">Työn eteneminen</a></li>
+        <li><a href="#tietoa">Tietoa meistä</a></li>
+        <li><a href="#yhteystiedot">Pyydä tarjous</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          class="hero-bg-img"
+          src="https://images.unsplash.com/photo-1696269667842-e258d3c24ad8?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxNHx8bW9kZXJuJTIwcGx1bWJpbmclMjBpbnN0YWxsYXRpb258ZW58MHwwfHx8MTc3MzY2NjE5Mnww&ixlib=rb-4.1.0&w=1920&q=85&auto=format&fit=crop"
+          alt="LVI-asennustyö"
+          loading="eager"
+          title="Photo by Catgirlmutant on Unsplash"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-eyebrow">LVI-ala Pirkanmaa</h1>
+        <h2 class="hero-title">
+          Putket, lämpö ja ilma<br>
+          <span class="hero-rotating-word" aria-live="polite">kuntoon</span>
+        </h2>
+        <p class="hero-sub">Nopeasti paikalle, siististi tehty Pirkanmaalla.</p>
+        <a href="#yhteystiedot" class="btn btn-primary">Pyydä tarjous</a>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats-section" aria-label="Avainluvut">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item scroll-reveal">
+            <div class="stat-circle-wrap">
+              <svg class="stat-svg" viewBox="0 0 80 80" aria-hidden="true">
+                <circle class="stat-track" cx="40" cy="40" r="34"/>
+                <circle class="stat-fill" cx="40" cy="40" r="34" data-pct="90"/>
+              </svg>
+              <span class="stat-number" data-target="10">0</span>
+              <span class="stat-unit">v</span>
+            </div>
+            <p class="stat-label">Kokemus</p>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-circle-wrap">
+              <svg class="stat-svg" viewBox="0 0 80 80" aria-hidden="true">
+                <circle class="stat-track" cx="40" cy="40" r="34"/>
+                <circle class="stat-fill" cx="40" cy="40" r="34" data-pct="100"/>
+              </svg>
+              <span class="stat-number" data-target="24">0</span>
+              <span class="stat-unit">h</span>
+            </div>
+            <p class="stat-label">Päivystys</p>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-circle-wrap">
+              <svg class="stat-svg" viewBox="0 0 80 80" aria-hidden="true">
+                <circle class="stat-track" cx="40" cy="40" r="34"/>
+                <circle class="stat-fill" cx="40" cy="40" r="34" data-pct="80"/>
+              </svg>
+              <span class="stat-number" data-target="200">0</span>
+              <span class="stat-unit">+</span>
+            </div>
+            <p class="stat-label">Asiakastyötä</p>
+          </div>
+          <div class="stat-item scroll-reveal">
+            <div class="stat-circle-wrap">
+              <svg class="stat-svg" viewBox="0 0 80 80" aria-hidden="true">
+                <circle class="stat-track" cx="40" cy="40" r="34"/>
+                <circle class="stat-fill" cx="40" cy="40" r="34" data-pct="75"/>
+              </svg>
+              <span class="stat-number" data-target="1">0</span>
+              <span class="stat-unit">vrk</span>
+            </div>
+            <p class="stat-label">Vastausaika</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PALVELUT – Feature grid -->
+    <section class="palvelut-section" id="palvelut">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">LVI-palvelut Pirkanmaalla</span>
+          <h2>Mitä teen</h2>
+          <p>Kaikki kodin ja kiinteistöjen LVI-työt yhdeltä tekijältä.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 8v32M12 8c0-2.2 1.8-4 4-4h4c2.2 0 4 1.8 4 4M12 40c0 2.2 1.8 4 4 4h4c2.2 0 4-1.8 4-4M20 8v32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M26 20h10M26 28h10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Putkityöt</h3>
+            <p>Vesijohtojen ja viemäreiden uusiminen, vuotokorjaukset sekä hanojen ja vesikalusteiden asennukset.</p>
+          </div>
+          <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="24" cy="24" r="10" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M24 4v4M24 40v4M4 24h4M40 24h4M8.93 8.93l2.83 2.83M36.24 36.24l2.83 2.83M8.93 39.07l2.83-2.83M36.24 11.76l2.83-2.83" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Lämmitysjärjestelmät</h3>
+            <p>Patteriverkostojen huolto ja uusiminen, lattialämmitykset ja käyttövesivaraajat.</p>
+          </div>
+          <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="6" y="14" width="36" height="20" rx="4" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M18 14V10M30 14V10M18 34v4M30 34v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>Ilmanvaihto</h3>
+            <p>IV-kanavien puhdistus ja uusiminen, koneellisten poistoilmajärjestelmien sekä tulo- ja poistoilmanvaihtojärjestelmien asennukset.</p>
+          </div>
+          <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M10 38c0-7.7 6.3-14 14-14s14 6.3 14 14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M24 10v8M16 14l4 4M32 14l-4 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M18 32c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Lämpöpumput</h3>
+            <p>Ilmalämpöpumppujen ja ilma-vesilämpöpumppujen asennus ja käyttöönoton opastus.</p>
+          </div>
+          <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M8 16h32M8 24h32M8 32h32" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <rect x="6" y="10" width="36" height="28" rx="3" stroke="currentColor" stroke-width="2.5"/>
+              </svg>
+            </div>
+            <h3>Saneeraukset</h3>
+            <p>Kylpyhuone- ja keittiöremonttien LVI-osuudet sekä putkiremontit kerrostalo- ja omakotikohteissa.</p>
+          </div>
+          <div class="feature-card scroll-reveal">
+            <div class="feature-icon">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M24 6l3.5 7 7.7 1.1-5.6 5.4 1.3 7.7L24 24l-6.9 3.2 1.3-7.7L12.8 14l7.7-1.1L24 6z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M14 34l-4 8M34 34l4 8M18 42h12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Huolto- ja vikapalvelu</h3>
+            <p>Äkillisten vesivahinkojen estot, putkirikon paikallistus ja lämmitysjärjestelmän vikojen korjaukset.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MATERIAALI/PALVELUTYYPIT -->
+    <section class="materiaalit-section" id="palvelutyypit">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">LVI-kohteet</span>
+          <h2>Omakotitalo vai kerrostaloyhtiö?</h2>
+          <p>Työ tehdään siististi kohteen koosta riippumatta.</p>
+        </div>
+        <div class="materiaalit-grid">
+          <div class="materiaali-card scroll-reveal">
+            <div class="materiaali-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1581166418878-11f0dde922c2?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxfHxwaXBlJTIwZml0dGluZyUyMHRvb2xzfGVufDB8MHx8fDE3NzM2NjYxOTJ8MA&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop"
+                alt="Omakotitalon LVI"
+                loading="lazy"
+                title="Photo by Elena Rouame on Unsplash"
+              >
+            </div>
+            <div class="materiaali-body">
+              <h3>Omakotitalot</h3>
+              <p>Kaikki peruskorjaukset ja uudet asennukset. Hoidan koko talon LVI-työt yhdellä tilauksella.</p>
+            </div>
+          </div>
+          <div class="materiaali-card scroll-reveal">
+            <div class="materiaali-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1503518646760-43090c4b8d55?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwzfHxodmFjJTIwdmVudGlsYXRpb24lMjBzeXN0ZW18ZW58MHwwfHx8MTc3MzY2NjE5M3ww&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop"
+                alt="Kerrostaloyhtiön IV-kanavisto"
+                loading="lazy"
+                title="Photo by Mark Koenov on Unsplash"
+              >
+            </div>
+            <div class="materiaali-body">
+              <h3>Kerrostaloyhtiöt</h3>
+              <p>Taloyhtiöiden putkistosaneeraukset, IV-huollot ja yhteistilojen LVI-työt.</p>
+            </div>
+          </div>
+          <div class="materiaali-card scroll-reveal">
+            <div class="materiaali-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1702392183172-17fdef8002b4?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxNXx8c2tpbGxlZCUyMHRyYWRlc21hbiUyMHdvcmtpbmd8ZW58MHwwfHx8MTc3MzY2NjE5NHww&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop"
+                alt="Uudisrakennuksen LVI-asennukset"
+                loading="lazy"
+                title="Photo by tommao wang on Unsplash"
+              >
+            </div>
+            <div class="materiaali-body">
+              <h3>Uudisrakentaminen</h3>
+              <p>Uusien rakennusten LVI-suunnittelu ja asennukset perustuksista käyttöönottoon.</p>
+            </div>
+          </div>
+          <div class="materiaali-card scroll-reveal">
+            <div class="materiaali-img-wrap">
+              <div class="materiaali-placeholder" aria-hidden="true">
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="6" y="16" width="36" height="24" rx="3" stroke="#E8650A" stroke-width="2.5"/>
+                  <path d="M14 16V12a10 10 0 0120 0v4" stroke="#E8650A" stroke-width="2.5" stroke-linecap="round"/>
+                  <circle cx="24" cy="28" r="4" stroke="#E8650A" stroke-width="2"/>
+                </svg>
+              </div>
+            </div>
+            <div class="materiaali-body">
+              <h3>Liikekiinteistöt</h3>
+              <p>Toimistojen, hallitilojen ja myymälöiden LVI-huollot sopimuksella tai kertakäyntinä.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROSESSIVAIHEET -->
+    <section class="prosessi-section" id="prosessi">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">Työn eteneminen</span>
+          <h2>Neljä vaihetta valmiiseen LVI-työhön</h2>
+        </div>
+        <div class="prosessi-timeline">
+          <div class="prosessi-step scroll-reveal">
+            <div class="step-number">1</div>
+            <div class="step-content">
+              <h3>Yhteydenotto</h3>
+              <p>Lähetä viesti tai soita. Kerro, mikä tarve on tai mitä haluat teettää.</p>
+            </div>
+          </div>
+          <div class="prosessi-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="prosessi-step scroll-reveal">
+            <div class="step-number">2</div>
+            <div class="step-content">
+              <h3>Tarjous</h3>
+              <p>Käyn kohteessa tai teen arvion kuvien perusteella. Tarjouksen saat 1 arkipäivän sisällä.</p>
+            </div>
+          </div>
+          <div class="prosessi-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="prosessi-step scroll-reveal">
+            <div class="step-number">3</div>
+            <div class="step-content">
+              <h3>Työ tehdään</h3>
+              <p>Sovin aikataulun ja tuon tarvikkeet mukanani. Työ alkaa sovittuna päivänä.</p>
+            </div>
+          </div>
+          <div class="prosessi-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="prosessi-step scroll-reveal">
+            <div class="step-number">4</div>
+            <div class="step-content">
+              <h3>Luovutus</h3>
+              <p>Käymme työn läpi yhdessä. Saat työn dokumentit ja takuutodistuksen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIETOA YRITYKSESTÄ -->
+    <section class="tietoa-section" id="tietoa">
+      <div class="container tietoa-inner">
+        <div class="tietoa-img scroll-reveal">
+          <img
+            src="https://images.unsplash.com/photo-1702392183172-17fdef8002b4?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxNXx8c2tpbGxlZCUyMHRyYWRlc21hbiUyMHdvcmtpbmd8ZW58MHwwfHx8MTc3MzY2NjE5NHww&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop"
+            alt="LVI-asentaja työssä Pirkanmaalla"
+            loading="lazy"
+            title="Photo by tommao wang on Unsplash"
+          >
+        </div>
+        <div class="tietoa-text scroll-reveal">
+          <span class="section-tag">Tietoa meistä</span>
+          <h2>Pirkanmaalainen LVI-alan yksinyrittäjä</h2>
+          <p>Olen tehnyt LVI-töitä Pirkanmaalla yli kymmenen vuotta. Jokainen työ kulkee alusta loppuun saman ihmisen käsissä, mikä takaa joustavan ja laadukkaan palvelun.</p>
+          <p>Toimin pääasiassa Tampereen seudulla, mutta teen töitä koko Pirkanmaan alueella. Kiireellisissä tilanteissa, kuten vesivahingoissa, olen paikalla samana päivänä.</p>
+          <ul class="tietoa-lista">
+            <li>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Toimialue: koko Pirkanmaa
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Tarjous 1 arkipäivässä yhteydenotosta
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Kotitalousvähennys omakotitalotöihin
+            </li>
+          </ul>
+          <a href="#yhteystiedot" class="btn btn-primary">Pyydä tarjous</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TAKUU -->
+    <section class="takuu-section">
+      <div class="container">
+        <div class="section-header scroll-reveal">
+          <span class="section-tag">Palvelulupaukset</span>
+          <h2>Mitä lupaan</h2>
+        </div>
+        <div class="takuu-grid">
+          <div class="takuu-item scroll-reveal">
+            <div class="takuu-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 6l14 6v10c0 9-6 17-14 20C10 39 4 31 4 22V12l14-6 6 0z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                <path d="M16 24l5 5 9-9" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>2 vuoden takuu</h3>
+            <p>Kaikilla asennustöillä on 2 vuoden takuu. Asennusvirheestä johtuva vika korjataan veloituksetta.</p>
+          </div>
+          <div class="takuu-item scroll-reveal">
+            <div class="takuu-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M24 14v10l6 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Tarjous 24 h sisällä</h3>
+            <p>Yhteydenottoon vastataan seuraavaan arkipäivään mennessä. Kiireellisissä tilanteissa vastaan saman päivän aikana.</p>
+          </div>
+          <div class="takuu-item scroll-reveal">
+            <div class="takuu-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="14" width="32" height="24" rx="3" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M8 22h32M16 14v-4M32 14v-4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M16 30h8M16 34h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3>Selkeä lasku</h3>
+            <p>Lasku erittelee työn ja materiaalit selkeästi. Omakotitalotöihin voi hakea kotitalousvähennystä.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YHTEYSTIEDOT / TARJOUSPYYNTÖ -->
+    <section class="yhteys-section" id="yhteystiedot">
+      <div class="container yhteys-inner">
+        <div class="yhteys-info scroll-reveal">
+          <span class="section-tag">Ota yhteyttä</span>
+          <h2>Pyydä tarjous LVI-työstä Pirkanmaalla</h2>
+          <p>Kerro mitä tarvitset. Vastaan nopeasti.</p>
+          <ul class="yhteys-lista">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2A19.79 19.79 0 013.08 5.18 2 2 0 015.09 3h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L9.09 10.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <a href="tel:04578736248">04578736248</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <a href="mailto:kappe.gm@gmail.com">kappe.gm@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/></svg>
+              Aleksanterinkatu 20, Pirkanmaa
+            </li>
+          </ul>
+        </div>
+        <div class="yhteys-form scroll-reveal">
+          <form id="tarjous-form" action="https://formsubmit.co/kappe.gm@gmail.com" method="POST" novalidate>
+  <input type="hidden" name="_subject" value="Yhteydenotto – test">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+            <div class="form-group">
+              <input type="text" id="nimi" name="nimi" required placeholder=" " autocomplete="name">
+              <label for="nimi">Nimi</label>
+            </div>
+            <div class="form-group">
+              <input type="tel" id="puhelin" name="puhelin" required placeholder=" " autocomplete="tel">
+              <label for="puhelin">Puhelinnumero</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder=" " autocomplete="email">
+              <label for="email">Sähköposti (valinnainen)</label>
+            </div>
+            <div class="form-group">
+              <textarea id="viesti" name="viesti" required placeholder=" " rows="4"></textarea>
+              <label for="viesti">Kerro mitä tarvitset</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Lähetä tarjouspyyntö</button>
+            <div id="form-success" class="form-msg form-success" role="alert" aria-live="polite" hidden>Viesti lähetetty! Palataan pian.</div>
+            <div id="form-error" class="form-msg form-error" role="alert" aria-live="polite" hidden>Jotain meni pieleen. Soita suoraan: <a href="tel:04578736248">04578736248</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <span class="footer-logo">test</span>
+        <p>LVI-palvelut Pirkanmaalla.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Palvelut</h4>
+        <ul>
+          <li><a href="#palvelut">Putkityöt</a></li>
+          <li><a href="#palvelut">Lämmitysjärjestelmät</a></li>
+          <li><a href="#palvelut">Ilmanvaihto</a></li>
+          <li><a href="#palvelut">Lämpöpumput</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Yhteystiedot</h4>
+        <ul>
+          <li><a href="tel:04578736248">04578736248</a></li>
+          <li><a href="mailto:kappe.gm@gmail.com">kappe.gm@gmail.com</a></li>
+          <li>Aleksanterinkatu 20</li>
+          <li>Pirkanmaa</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span>&copy; 2025 test. Kaikki oikeudet pidätetään.</span>
+        <span>Kuvat: <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a></span>
+        <a href="tietosuoja.html">Tietosuojaseloste</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+<!-- Evästebanneri -->
+<div id="evaste-banneri" style="display:none;position:fixed;bottom:0;left:0;right:0;
+  background:#1a1a1a;color:#f5f5f5;padding:14px 20px;z-index:99999;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  font-family:system-ui,sans-serif;font-size:14px;line-height:1.4;flex-wrap:wrap;">
+  <span>Tämä sivusto käyttää vain välttämättömiä teknisiä evästeitä.
+    <a href="tietosuoja.html" style="color:#90caf9;text-decoration:underline;">Lue lisää</a>
+  </span>
+  <button onclick="hyvaksyEvasteet()" style="background:#ffffff;color:#1a1a1a;
+    border:none;border-radius:6px;padding:8px 20px;font-size:14px;font-weight:600;
+    cursor:pointer;white-space:nowrap;flex-shrink:0;">Hyväksy</button>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem('evasteet_hyvaksytty')){
+    document.getElementById('evaste-banneri').style.display='flex';
+  }
+})();
+function hyvaksyEvasteet(){
+  localStorage.setItem('evasteet_hyvaksytty','1');
+  document.getElementById('evaste-banneri').style.display='none';
+}
+</script>
+
+</body>
+</html>

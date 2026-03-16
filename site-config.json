@@ -1,0 +1,42 @@
+{
+  "site_id": "82abd7f63380",
+  "repo": "sivutnopeasti/test-82abd7f63380",
+  "company": "test",
+  "email": "kappe.gm@gmail.com",
+  "place_id": "",
+  "issue_number": 71,
+  "instagram_username": ",",
+  "instagram_feed": false,
+  "images": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1696269667842-e258d3c24ad8?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxNHx8bW9kZXJuJTIwcGx1bWJpbmclMjBpbnN0YWxsYXRpb258ZW58MHwwfHx8MTc3MzY2NjE5Mnww&ixlib=rb-4.1.0&w=1920&q=85&auto=format&fit=crop",
+      "alt": "LVI-asennustyö"
+    },
+    "image-1": {
+      "url": "https://images.unsplash.com/photo-1581166418878-11f0dde922c2?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxfHxwaXBlJTIwZml0dGluZyUyMHRvb2xzfGVufDB8MHx8fDE3NzM2NjYxOTJ8MA&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop",
+      "alt": "Omakotitalon LVI"
+    },
+    "image-2": {
+      "url": "https://images.unsplash.com/photo-1503518646760-43090c4b8d55?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwzfHxodmFjJTIwdmVudGlsYXRpb24lMjBzeXN0ZW18ZW58MHwwfHx8MTc3MzY2NjE5M3ww&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop",
+      "alt": "Kerrostaloyhtiön IV-kanavisto"
+    },
+    "image-3": {
+      "url": "https://images.unsplash.com/photo-1702392183172-17fdef8002b4?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxNXx8c2tpbGxlZCUyMHRyYWRlc21hbiUyMHdvcmtpbmd8ZW58MHwwfHx8MTc3MzY2NjE5NHww&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop",
+      "alt": "Uudisrakennuksen LVI-asennukset"
+    },
+    "image-4": {
+      "url": "https://images.unsplash.com/photo-1702392183172-17fdef8002b4?ixid=M3w4ODYwNTl8MHwxfHNlYXJjaHwxNXx8c2tpbGxlZCUyMHRyYWRlc21hbiUyMHdvcmtpbmd8ZW58MHwwfHx8MTc3MzY2NjE5NHww&ixlib=rb-4.1.0&w=1080&q=85&auto=format&fit=crop",
+      "alt": "LVI-asentaja työssä Pirkanmaalla"
+    }
+  },
+  "texts": {
+    "h1": "LVI-ala Pirkanmaa",
+    "h2_1": "Putket, lämpö ja ilma\n          kuntoon",
+    "h2_2": "Mitä teen",
+    "h2_3": "Omakotitalo vai kerrostaloyhtiö?",
+    "h2_4": "Neljä vaihetta valmiiseen LVI-työhön",
+    "h2_5": "Pirkanmaalainen LVI-alan yksinyrittäjä",
+    "h2_6": "Mitä lupaan",
+    "hero_p": "Nopeasti paikalle, siististi tehty Pirkanmaalla."
+  }
+}

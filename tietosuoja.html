@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex">
+<title>Tietosuojaseloste – test</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 740px; margin: 0 auto;
+         padding: 2rem 1.5rem 4rem; color: #222; line-height: 1.7; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.15rem; margin-top: 2rem; margin-bottom: 0.4rem; }
+  p, li { margin: 0.4rem 0; }
+  a { color: inherit; }
+  nav { margin-bottom: 2rem; }
+  nav a { text-decoration: none; color: #555; font-size: 0.9rem; }
+  nav a:hover { text-decoration: underline; }
+  @media (max-width: 480px) { body { padding: 1.5rem 1rem 3rem; } }
+</style>
+</head>
+<body>
+<nav><a href="index.html">← Takaisin etusivulle</a></nav>
+
+<h1>Tietosuojaseloste</h1>
+<p>Päivitetty: 16.3.2026</p>
+
+<h2>1. Rekisterinpitäjä</h2>
+<p>test<br>Aleksanterinkatu 20<br>Puh: 04578736248<br>Sähköposti: kappe.gm@gmail.com</p>
+
+<h2>2. Rekisterin nimi</h2>
+<p>Asiakasyhteydenottorekisteri</p>
+
+<h2>3. Kerättävät henkilötiedot</h2>
+<p>Yhteydenottolomakkeen kautta kerätään seuraavat tiedot:</p>
+<ul>
+  <li>Nimi</li>
+  <li>Sähköpostiosoite ja/tai puhelinnumero</li>
+  <li>Lomakkeelle kirjoitettu viesti</li>
+</ul>
+
+<h2>4. Tietojen käyttötarkoitus</h2>
+<p>Tietoja käytetään ainoastaan yhteydenottopyyntöihin vastaamiseen. Tietoja ei käytetä
+markkinointiin eikä luovuteta kolmansille osapuolille.</p>
+
+<h2>5. Tietojen säilytysaika</h2>
+<p>Yhteydenottoviestit säilytetään niin kauan kuin asian hoitaminen edellyttää, minkä
+jälkeen ne poistetaan.</p>
+
+<h2>6. Tietojen siirto EU:n ulkopuolelle</h2>
+<p>Yhteydenottolomakkeen viestit välitetään Formspree-palvelun kautta (yhdysvaltalainen
+palveluntarjoaja, EU–US Data Privacy Framework -sertifioitu).</p>
+
+<h2>7. Rekisteröidyn oikeudet</h2>
+<p>Sinulla on oikeus:</p>
+<ul>
+  <li>Saada tieto sinusta tallennetuista tiedoista</li>
+  <li>Vaatia virheellisten tietojen oikaisemista</li>
+  <li>Vaatia tietojesi poistamista</li>
+  <li>Tehdä valitus tietosuojavaltuutetulle (tietosuoja.fi)</li>
+</ul>
+<p>Ota oikeuksien käyttämiseksi yhteyttä: kappe.gm@gmail.com</p>
+
+<h2>8. Evästeet</h2>
+<p>Tämä sivusto käyttää vain välttämättömiä teknisiä evästeitä sivuston toiminnan
+kannalta (esim. evästehyväksyntä). Sivustolla ei käytetä seuranta- tai
+analytiikkaevästeitä.</p>
+<!-- Evästebanneri -->
+<div id="evaste-banneri" style="display:none;position:fixed;bottom:0;left:0;right:0;
+  background:#1a1a1a;color:#f5f5f5;padding:14px 20px;z-index:99999;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  font-family:system-ui,sans-serif;font-size:14px;line-height:1.4;flex-wrap:wrap;">
+  <span>Tämä sivusto käyttää vain välttämättömiä teknisiä evästeitä.
+    <a href="tietosuoja.html" style="color:#90caf9;text-decoration:underline;">Lue lisää</a>
+  </span>
+  <button onclick="hyvaksyEvasteet()" style="background:#ffffff;color:#1a1a1a;
+    border:none;border-radius:6px;padding:8px 20px;font-size:14px;font-weight:600;
+    cursor:pointer;white-space:nowrap;flex-shrink:0;">Hyväksy</button>
+</div>
+<script>
+(function(){
+  if(!localStorage.getItem('evasteet_hyvaksytty')){
+    document.getElementById('evaste-banneri').style.display='flex';
+  }
+})();
+function hyvaksyEvasteet(){
+  localStorage.setItem('evasteet_hyvaksytty','1');
+  document.getElementById('evaste-banneri').style.display='none';
+}
+</script>
+
+</body>
+</html>
